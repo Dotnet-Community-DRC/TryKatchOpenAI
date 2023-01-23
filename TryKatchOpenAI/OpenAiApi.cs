@@ -16,7 +16,7 @@ public static class OpenAiApi
 
         IConfiguration configuration = builder.Build();
         
-        var apiKey = "";
+        var apiKey = configuration["TokenKey"];
         
         var apiUrl = "https://api.openai.com/v1/engines/" + model + "/completions";
 
