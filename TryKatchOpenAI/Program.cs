@@ -21,7 +21,7 @@ internal class Program
     private static string CallOpenAi(int tokens, string input, string model,
         double temperature, int topP, int frequencyPenalty, int presencePenalty)
     {
-        var apiKey = "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";
+        var apiKey = "{Your API KEY}";
         
         
         var apiUrl = "https://api.openai.com/v1/engines/" + model + "/completions";
